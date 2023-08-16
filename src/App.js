@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Counter from './Counter';
 import Info from './info';
+import Average from './Average';
 
 const App = () => {
    const [visible, setVisible] = useState(false);
@@ -17,6 +18,9 @@ const App = () => {
          </button>
          <hr />
          {visible && <Info />}
+         <Counter /> Counter 렌더링
+         <Info />
+         <Average />
       </div>
    );
 };
